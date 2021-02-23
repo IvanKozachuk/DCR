@@ -1,0 +1,80 @@
+.dashboard {
+  width: 100%;
+  color: #1c1c1c;
+}
+
+.main_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_container h2 {
+  color: ;
+  font-size: 1.4rem;
+}
+
+.table_container {
+  width: 70%;
+  margin-bottom: 3rem;
+}
+
+.table_container form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 400px;
+  background: #fff;
+  border-radius: 3px;
+  font-size: 0.9em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+th,
+td {
+  padding: 12px 15px;
+}
+
+th {
+  font-size: 0.8rem;
+  padding: .5rem;
+  text-align: left;
+  background-color: #009879;
+  color: #ffffff;
+}
+
+tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+td {
+  color: hsl(227, 12%, 61%);
+}
+
+.agent_name {
+  color: #1c1c1c;
+}
+
+.download_btn {
+  background-color: #9d9da3;
+  font-size: .9rem;
+  /* background-color: #009879; */
+}
+
+.download_btn:hover {
+  transform: scale(1.02);
+}

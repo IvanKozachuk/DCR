@@ -1,0 +1,78 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 2rem 0;
+}
+
+.nav_btn {
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  width: 100px;
+  padding: .3rem 0;
+  border: none;
+  border-radius: 3px;
+  margin-right: 3rem;
+  /* background-color: #9d9da3; */
+  background-color: #009879;
+  color: #fff;
+  cursor: pointer;
+  transition: all ease-out .13s;
+}
+
+.nav_btn:hover,
+.logout_btn:hover {
+  transform: scale(1.02);
+}
+
+.nav_btn:focus,
+.logout_btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.toolbar {
+  width: 100%;
+}
+
+.initials {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 1rem;
+}
+
+.user_name {
+  margin-right: 3rem;
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.logout_btn {
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  width: 100px;
+  padding: .3rem 0;
+  border: none;
+  border-radius: 3px;
+  margin-right: 3rem;
+  background-color: #c294a7;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1300px) {
+  .navbar {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .navbar {
+    width: 80%;
+  }
+}
+
