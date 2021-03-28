@@ -70,7 +70,7 @@ return finalContacts;
 
 // getting daily number of tickets per agent
 export const getDaily = (data) => {
-  const result = data.filter(ticket => ticket.createdAt.slice(8, 10) === day);
+  const result = data.filter(ticket => ticket.createdAt.slice(8, 10) === day && ticket.createdAt.slice(5, 7) == month);
   console.log(result);
   const filteredDaily = result.reduce(
     (map => (r, a) => (!map.has(a.agent) && map.set(a.agent, r[r.push({ agent: a.agent, tickets: 0 }) - 1]), map.get(a.agent).tickets++, r))(new Map),
@@ -83,7 +83,7 @@ export const getDaily = (data) => {
 
 // get daily contacts 
 export const getDailyContacts = (data) => {
-  const result = data.filter(ticket => ticket.createdAt.slice(8, 10) === day);
+  const result = data.filter(ticket => ticket.createdAt.slice(8, 10) === day && ticket.createdAt.slice(5, 7) == month);
   const agents = [];
 
   result.forEach((ticket) => {
@@ -115,7 +115,7 @@ export const filterDailyContacts = (data, agentName) => {
     mails: 0
   }
 // sorting all data monthly
-  const result = data.filter(ticket => ticket.createdAt.slice(8, 10) === day);
+  const result = data.filter(ticket => ticket.createdAt.slice(8, 10) === day && ticket.createdAt.slice(5, 7) == month);
 // sorting contacts based on agent's name
   const contacts = result.map(agent => {
     if(agent.agent === agentName && agent.chats !== 0) {
