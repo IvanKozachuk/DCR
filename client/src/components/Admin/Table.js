@@ -11,7 +11,7 @@ const Table = () => {
   const [languageFilter, setLanguageFilter] = useState('');
   // fetchning all row data and setting them to dcrData state
   useEffect(() => {
-    fetch('http://localhost:5000/dcr')
+    fetch('https://protected-hamlet-99583.herokuapp.com/dcr')
       .then(result => result.json())
       .then(data => setDcrData(data));
   }, []);
