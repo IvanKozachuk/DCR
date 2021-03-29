@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'http://localhost:5000' });
+// change below line for local host 5000 to dest in dev env
+const API = axios.create({ baseURL: 'https://protected-hamlet-99583.herokuapp.com/' });
 
 export const fetchDCRs = () => API.get('/dcr');
 
