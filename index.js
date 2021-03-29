@@ -2,7 +2,8 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import mongoose from 'mongoose';
-import 'path';
+// import 'path';
+const path = require('path');
 
 
 import dcrRoutes from './routes/dcr.js';
